@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_syncConnectionTypes_entries">pref_syncConnectionTypes_entries
+    </string-array>
+    <string-array name="pref_syncConnectionTypes_values">pref_syncConnectionTypes_entries
+    </string-array>
+    <string-array name="list_entries">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+    </string-array>
+    <string-array name="list_entries_value">
+        <item>01a</item>
+        <item>02b</item>
+        <item>03c</item>
+    </string-array>
+    <string-array name="list_entries_value2">
+        <item>001a</item>
+        <item>002b</item>
+        <item>003c</item>
+    </string-array>
+</resources>

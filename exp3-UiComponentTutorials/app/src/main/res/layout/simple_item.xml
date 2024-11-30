@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_table_laytout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.tong.exp3.MainActivity">
+
+    <TextView android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="#f0f"
+        android:paddingLeft="10dp"/>
+    <ImageView android:id="@+id/Picture"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>
