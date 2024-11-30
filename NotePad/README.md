@@ -12,7 +12,7 @@
 5-撤销操作：撤销功能
 
 ## 一.时间戳功能
-### 1.新建一个noteslist_item_new.xml,在这中间设置要显示的时间框以及图片
+### 1.创建一个 noteslist_item_new.xml 文件，并在其中添加用于显示时间的框和图片
 ```java
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -92,7 +92,7 @@
         </LinearLayout>
     </LinearLayout>
 ```
-### 2.发现在NotPadProvider中已经提供NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE,于是进入notelist.java PROJECTION 契约类的变量值加一列。
+### 2.注意到 NotPadProvider 中已提供 NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE，因此在 notelist.java 的 PROJECTION 契约类中添加了一列.
 ```java
 private static final String[] PROJECTION = new String[] {
             NotePad.Notes._ID, // 0
@@ -134,7 +134,11 @@ values.put(NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE,time);
   <img src="./pic/timestamp.png" width=480 height= />
 -------
 ## 二.查询框
-* 如果想在屏幕中显示其他控件，可以采用如下方法：1.代码中添加：setContentView(R.layout.main)2.在xml文件中添加一个LIstView控件和一个SearchView控件，注意LIstView控件id必须为"@id/Android:list"表示匹配的ListView  
+* 要在屏幕上显示其他控件，请采取以下步骤：
+1. 在代码中添加 setContentView(R.layout.main)；
+2. 在 XML 文件中添加一个 ListView 控件和一个 SearchView 控件，
+确保 ListView 的 ID 为 @id/Android:list 以便正确匹配。
+
 ### 1.创建一个新的notepad_main.xml，在这里面设置搜索框
 ```java
     <SearchView
@@ -160,7 +164,7 @@ searchView = (SearchView) findViewById(R.id.search);
    searchView.setIconifiedByDefault(false);
    searchView.setSubmitButtonEnabled(true);
 ```
-### 4. 设置当点击搜索按钮时触发的方法和搜索内容改变时触发的方法
+### 4. 设置在点击搜索按钮时和搜索内容变化时触发的方法
 ```java
    searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
     @Override
@@ -194,7 +198,7 @@ searchView = (SearchView) findViewById(R.id.search);
 });
 
 ```
-### 5.在NoteList.java中的onCreate方法中添加setContentView(R.layout.notepad_main);这句话，实现搜索框
+### 5.在 NoteList.java 的 onCreate 方法中添加 setContentView(R.layout.notepad_main)，以实现搜索框的功能。
 -------
   <img src="./pic/search.png" width=480 height= />
 -------
@@ -334,7 +338,7 @@ searchView = (SearchView) findViewById(R.id.search);
   选择某一条note，点击可将内容分享至其他应用，使用Intent.ACTION_SEND来实现。具体效果和代码如下  
 
 
-###  1.设置好点击事件后，通过获取当前选中的note的内容（mCursor.getString(1)即为我们要获取的内容），然后将其分享到我们想要分享的应用  
+###  1.设置完点击事件后，获取当前选中的笔记内容（mCursor.getString(1)），然后将其分享至所需的应用。
 
 ```java
        Uri noteUri = ContentUris.withAppendedId(getIntent().getData(), info.id);
@@ -366,7 +370,7 @@ searchView = (SearchView) findViewById(R.id.search);
 
 ###  五.按步撤销功能
 
-#####  源工程中已经含有撤销功能，但是只是针对于一次性撤销，即将该日记重置为打开前的状态。我实现的撤销在于可以记录你的每一次“点击保存”前的状态，这样在写长文本日记的时候比较方便，不用一步推倒，重新来过。
+#####  原有工程中已经实现了撤销功能，但仅限于一次性撤销，能够将日记恢复到打开前的状态。而我实现的撤销功能则可以记录每一次‘点击保存’前的状态，这在撰写长文本日记时更加方便，避免了需要一步步推倒重来的麻烦。
 
 
 
