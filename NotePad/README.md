@@ -132,7 +132,7 @@ values.put(NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE,time);
 ### 6.成功显示时间戳
 -------
   <img src="./pic/timestamp.png" width=480 height= />
--------
+
 
 ## 二.查询框
 
