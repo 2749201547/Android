@@ -11,6 +11,8 @@
 
 5-撤销操作：撤销功能
 
+-------
+
 ## 一 一 一.时间戳功能
 ### 1.创建一个 noteslist_item_new.xml 文件，并在其中添加用于显示时间的框和图片
 ```java
@@ -133,8 +135,8 @@ values.put(NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE,time);
 -------
   <img src="./pic/timestamp.png" width=480 height= />
 
-
-
+-------
+-------
 
 ## 二 二 二.查询框
 
