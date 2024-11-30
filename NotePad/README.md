@@ -133,6 +133,7 @@ values.put(NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE,time);
 -------
   <img src="./pic/timestamp.png" width=480 height= />
 -------
+
 ## 二.查询框
 
 * 要在屏幕上显示其他控件，请采取以下步骤：
