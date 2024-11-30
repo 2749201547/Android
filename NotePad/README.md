@@ -137,10 +137,8 @@ values.put(NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE,time);
 
 * 要在屏幕上显示其他控件，请采取以下步骤：
 
-1. 在代码中添加 setContentView(R.layout.main)；
-   
-2. 在 XML 文件中添加一个 ListView 控件和一个 SearchView 控件，
-   
+1. 在代码中添加 setContentView(R.layout.main)；  
+2. 在 XML 文件中添加一个 ListView 控件和一个 SearchView 控件
 确保 ListView 的 ID 为 @id/Android:list 以便正确匹配。
 
 ### 1.创建一个新的notepad_main.xml，在这里面设置搜索框
