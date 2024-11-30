@@ -374,9 +374,10 @@ searchView = (SearchView) findViewById(R.id.search);
 
 ### 3.结果
 -------
-  <img src="./pic/share1.png" width=480 height= />
+  <img src="./pic/share1 .png" width=480 height= />
 
   <img src="./pic/share2.png" width=480 height= />
+
 -------
 
 ##  五 五 五.按步撤销功能
