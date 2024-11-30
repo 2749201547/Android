@@ -11,7 +11,7 @@
 
 5-撤销操作：撤销功能
 
-## 一.时间戳功能
+## 一 一 一.时间戳功能
 ### 1.创建一个 noteslist_item_new.xml 文件，并在其中添加用于显示时间的框和图片
 ```java
 <?xml version="1.0" encoding="utf-8"?>
@@ -134,7 +134,9 @@ values.put(NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE,time);
   <img src="./pic/timestamp.png" width=480 height= />
 
 
-## 二.查询框
+
+
+## 二 二 二.查询框
 
 * 要在屏幕上显示其他控件，请采取以下步骤：
 
@@ -205,7 +207,9 @@ searchView = (SearchView) findViewById(R.id.search);
 -------
   <img src="./pic/search.png" width=480 height= />
 -------
-## 三.修改背景色
+
+
+## 三 三 三.修改背景色
 ###  1.先创建一个change_backgroundcolor.xml
 ```java
   <?xml version="1.0" encoding="utf-8"?>
@@ -337,7 +341,9 @@ searchView = (SearchView) findViewById(R.id.search);
 -------
 
 -------
-## 四.分享功能
+
+
+## 四 四 四.分享功能
   选择某一条note，点击可将内容分享至其他应用，使用Intent.ACTION_SEND来实现。具体效果和代码如下  
 
 
@@ -371,7 +377,7 @@ searchView = (SearchView) findViewById(R.id.search);
   <img src="./pic/share2.png" width=480 height= />
 -------
 
-###  五.按步撤销功能
+##  五 五 五.按步撤销功能
 
 #####  原有工程中已经实现了撤销功能，但仅限于一次性撤销，能够将日记恢复到打开前的状态。而我实现的撤销功能则可以记录每一次‘点击保存’前的状态，这在撰写长文本日记时更加方便，避免了需要一步步推倒重来的麻烦。
 
