@@ -210,6 +210,7 @@ searchView = (SearchView) findViewById(R.id.search);
 ### 5.在 NoteList.java 的 onCreate 方法中添加 setContentView(R.layout.notepad_main)，以实现搜索框的功能。
 -------
   <img src="./pic/search.png" width=480 height= />
+  
 -------
 
 -------
