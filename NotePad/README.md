@@ -13,6 +13,8 @@
 
 -------
 
+-------
+
 ## 一 一 一.时间戳功能
 ### 1.创建一个 noteslist_item_new.xml 文件，并在其中添加用于显示时间的框和图片
 ```java
@@ -210,6 +212,7 @@ searchView = (SearchView) findViewById(R.id.search);
   <img src="./pic/search.png" width=480 height= />
 -------
 
+-------
 
 ## 三 三 三.修改背景色
 ###  1.先创建一个change_backgroundcolor.xml
@@ -338,7 +341,6 @@ searchView = (SearchView) findViewById(R.id.search);
 ### 5.结果
 -------
   <img src="./pic/color.png" width=480 height= />
--------
 
 -------
 
@@ -377,6 +379,8 @@ searchView = (SearchView) findViewById(R.id.search);
   <img src="./pic/share1 .png" width=480 height= />
 
   <img src="./pic/share2.png" width=480 height= />
+
+-------
 
 -------
 
